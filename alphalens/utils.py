@@ -363,7 +363,7 @@ def compute_forward_returns(
 
     # now set the columns correctly
     df = df[column_list]
-    df.index.levels[0].freq = freq
+#     df.index.levels[0].freq = freq
     df.index.set_names(["date", "asset"], inplace=True)
 
     return df
